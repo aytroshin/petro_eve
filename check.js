@@ -58,14 +58,14 @@ function getValues(event){
     ph.focus();
     return;
   }
-  if (values['Start_water'].replace(/,/, ".") > 80 || values['Start_water'].replace(/,/, ".") < 10)  {
-    alert("Введите начальное одержание воды от 10,0 до 80,0 % об.");
+  if (values['Start_water'].replace(/,/, ".") > 80 || values['Start_water'].replace(/,/, ".") < 5)  {
+    alert("Введите начальное содержание воды от 5,0 до 80,0 % об.");
     let str_w = document.getElementById("Start_water");
     str_w.focus();
     return;
   }
   if (values['Finish_water'].replace(/,/, ".") > 30 || values['Finish_water'].replace(/,/, ".") < 0.5)  {
-    alert("Введите конечное одержание воды от 0,5 до 30,0 % об.");
+    alert("Введите конечное содержание воды от 0,5 до 30,0 % об.");
     let fin_w = document.getElementById("Finish_water");
     fin_w.focus();
     return;
