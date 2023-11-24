@@ -11,7 +11,7 @@ function getValues(event){
     values[name] = value;
 });
   if (values['Density'].replace(/,/, ".") > 970 || values['Density'].replace(/,/, ".") < 800) {
-    alert("Введите значение плотности нефти от 800,0 до 960,0 кг/м3");
+    alert("Введите значение плотности нефти от 800,0 до 970,0 кг/м3");
     let den = document.getElementById("Density");
     den.focus();
     return;
@@ -29,7 +29,7 @@ function getValues(event){
     return;
   }
   if (values['Asphaltene'].replace(/,/, ".") > 10 || values['Asphaltene'].replace(/,/, ".") < 0) {
-    alert("Введите содержание асфальтенов от 0,1 до 10,0 масс. %");
+    alert("Введите содержание асфальтенов от 0,0 до 10,0 масс. %");
     let asph = document.getElementById("Asphaltene");
     asph.focus();
     return;
@@ -47,19 +47,19 @@ function getValues(event){
     return;
   }
   if (values['Water_density'].replace(/,/, ".") > 1300 || values['Water_density'].replace(/,/, ".") < 1000)  {
-    alert("Введите значение плотности воды от 1000,0 до 1250,0 кг/м3");
+    alert("Введите значение плотности воды от 1000,0 до 1300,0 кг/м3");
     let w_den = document.getElementById("Water_density");
     w_den.focus();
     return;
   }
   if (values['Water_pH'].replace(/,/, ".") > 12 || values['Water_pH'].replace(/,/, ".") < 3)  {
-    alert("Введите значение pH воды от 1000,0 до 1300,0 ед.pH");
+    alert("Введите значение pH воды от 3,0 до 12,0 ед.pH");
     let ph = document.getElementById("Water_pH");
     ph.focus();
     return;
   }
-  if (values['Start_water'].replace(/,/, ".") > 80 || values['Start_water'].replace(/,/, ".") < 5)  {
-    alert("Введите начальное одержание воды от 5,0 до 80,0 % об.");
+  if (values['Start_water'].replace(/,/, ".") > 80 || values['Start_water'].replace(/,/, ".") < 10)  {
+    alert("Введите начальное одержание воды от 10,0 до 80,0 % об.");
     let str_w = document.getElementById("Start_water");
     str_w.focus();
     return;
