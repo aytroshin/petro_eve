@@ -64,9 +64,9 @@ function getValues(event){
     str_w.focus();
     return;
   }
-  if (values['Start_water'].replace(/,/, ".") > 30 || values['Start_water'].replace(/,/, ".") < 0.5)  {
+  if (values['Finish_water'].replace(/,/, ".") > 30 || values['Finish_water'].replace(/,/, ".") < 0.5)  {
     alert("Введите конечное одержание воды от 0,5 до 30,0 % об.");
-    let fin_w = document.getElementById("Start_water");
+    let fin_w = document.getElementById("Finish_water");
     fin_w.focus();
     return;
   }
